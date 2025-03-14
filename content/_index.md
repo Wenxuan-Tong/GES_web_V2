@@ -4,7 +4,6 @@ date: 2025-03-14
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
@@ -29,7 +28,6 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
-      # 如果需要全屏Hero，可加 min-h-screen
       css_class: ""
       background:
         color: ""
@@ -38,20 +36,10 @@ sections:
           filters:
             brightness: 0.5
 
-  # 2) 团队简介区（原 about blox 改为 text blox）
-  - block: text
-    content:
-      title: "团队简介"
-      text: |
-        华北电力大学重力储能团队专注于大规模重力储能系统的前沿研究与工程实践，涵盖电站级运行控制、复合储能设计、智能化运维等多领域方向。我们秉承“技术创新、跨界融合、成果转化”的理念，积极推动产学研合作，并为行业与社会输出高质量的研究成果。
-        <br><br>
-        团队成员由教授、博士生、硕士生以及多学科背景的研究助理共同组成，拥有丰富的项目经验与多元化的技术储备。我们的目标是通过持续的创新与合作，引领重力储能技术的发展与应用，为可持续能源未来做出更大贡献。
-    design:
-      css_class: "bg-gray-100 dark:bg-gray-800"  # 示例背景样式，可根据主题需要调整
-      spacing:
-        padding: ["2rem", 0, "2rem", 0]
+  # 原“团队简介”区块（使用 about blox）已移除，避免调用不存在的模板。
+  # 如需显示团队简介内容，可考虑整合到其它区块中，或者直接在首页添加 HTML/Markdown 描述。
 
-  # 3) 团队负责人/核心成员展示区
+  # 2) 团队负责人/核心成员展示区
   - block: team
     content:
       title: "团队负责人与核心成员"
@@ -76,10 +64,9 @@ sections:
     design:
       spacing:
         padding: ["2rem", 0, "2rem", 0]
-      # 如果主题支持网格/卡片式布局，可在CSS中定义相应样式
       css_class: ""
 
-  # 4) CTA 卡片：引导访客了解更多或联系团队
+  # 3) CTA 卡片：引导访客了解更多或联系团队
   - block: cta-card
     content:
       title: "期待你的加入与合作"
