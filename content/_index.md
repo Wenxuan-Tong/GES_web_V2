@@ -11,18 +11,18 @@ sections:
   - block: hero
     content:
       title: "华北电力大学重力储能团队"
-      text: "Sense the future of energy storage. 致力于推动重力储能技术在新能源电力系统中的深度应用，为绿色低碳转型贡献力量。"
+      text: "致力于推动重力储能技术在新能源电力系统中的深度应用，为绿色低碳转型贡献力量。"
       primary_action:
         text: "了解更多"
-        url: "/research-overview/"   # 示例链接，可跳转到团队研究概括页面
+        url: "/research-overview/"   # 跳转到团队研究概括页面
         icon: rocket-launch
       secondary_action:
         text: "加入我们"
-        url: "/admissions/"          # 示例链接，可跳转到招生指南或联系页面
+        url: "/admissions/"          # 跳转到招生指南页面
       announcement:
         text: "欢迎浏览我们的全新官网！"
         link:
-          text: "查看近期动态"
+          text: "查看最新动态"
           url: "/news/"
     design:
       spacing:
@@ -32,50 +32,62 @@ sections:
       background:
         color: ""
         image:
-          filename: ""               # 如果有背景图，可在 /assets/media/ 下添加并在此引用
+          filename: ""               # 如有背景图，请将图片上传至 assets/media/ 并在此填写文件名
           filters:
             brightness: 0.5
 
-  # 原“团队简介”区块（使用 about blox）已移除，避免调用不存在的模板。
-  # 如需显示团队简介内容，可考虑整合到其它区块中，或者直接在首页添加 HTML/Markdown 描述。
-
-  # 2) 团队负责人/核心成员展示区
-  - block: team
+  # 2) 数据统计区
+  - block: stats
     content:
-      title: "团队负责人与核心成员"
-      text: "以下为团队负责人及部分核心成员简介，点击头像可查看详细信息。"
       items:
-        - name: "童文煊"
-          subtitle: "教授 / 团队负责人"
-          image: "/uploads/twx-profile.jpg"  # 请将实际头像文件放到 static/uploads/ 目录下
-          url: "/team/twx/"                 # 个人详情页面链接
-        - name: "张三"
-          subtitle: "副教授 / 电站级运行控制方向"
-          image: "/uploads/zhangsan.jpg"
-          url: "/team/zhangsan/"
-        - name: "李四"
-          subtitle: "助理研究员 / 复合储能系统方向"
-          image: "/uploads/lisi.jpg"
-          url: "/team/lisi/"
-        - name: "王五"
-          subtitle: "博士后 / 智能化运维方向"
-          image: "/uploads/wangwu.jpg"
-          url: "/team/wangwu/"
+        - statistic: "50+"
+          description: |
+            科研项目  
+            全国领先
+        - statistic: "100+"
+          description: |
+            高水平论文  
+            国际认可
+        - statistic: "10+"
+          description: |
+            企业合作  
+            技术转化
     design:
+      css_class: "bg-gray-100 dark:bg-gray-800"
+      spacing:
+        padding: ["1rem", 0, "1rem", 0]
+
+  # 3) 团队优势展示区
+  - block: features
+    id: features
+    content:
+      title: "团队优势"
+      text: "华北电力大学重力储能团队凭借雄厚的科研实力、跨学科协作和成果转化能力，在重力储能技术领域处于领先地位。我们的优势包括："
+      items:
+        - name: "技术领先"
+          icon: bolt
+          description: "拥有先进的储能系统设计、优化控制和智能化运维技术，确保技术始终保持前沿。"
+        - name: "跨学科协作"
+          icon: users
+          description: "集结电气、机械、材料、控制等多领域专家，实现深度融合与创新。"
+        - name: "成果转化"
+          icon: check-circle
+          description: "已在国际顶级期刊和会议发表100余篇论文，申请和授权多项专利，助力产业应用。"
+        - name: "丰富资源"
+          icon: award
+          description: "依托国家重点实验室和多家企业合作，提供充足的科研资金和实践平台。"
+    design:
+      css_class: ""
       spacing:
         padding: ["2rem", 0, "2rem", 0]
-      css_class: ""
 
-  # 3) CTA 卡片：引导访客了解更多或联系团队
+  # 4) CTA 卡片：引导访客了解更多或联系团队
   - block: cta-card
     content:
-      title: "期待你的加入与合作"
-      text: |
-        如果你对重力储能技术研究感兴趣，或希望与我们开展科研合作、技术咨询、项目联合申请，欢迎随时与我们联系。
-        <br><br>
-        我们将持续更新团队最新的科研进展与学术成果，敬请关注！
+      title: "期待与您共创未来"
+      text: "无论您是科研伙伴、产业合作伙伴，还是有志于深造的学子，华北电力大学重力储能团队都欢迎您的加入。了解我们的研究进展与团队动态，请立即联系我们！"
       button:
-        text: "联系我们"
+        text: "立即联系"
         url: "/contact/"
     design:
       card:
