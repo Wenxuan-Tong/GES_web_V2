@@ -38,8 +38,8 @@ sections:
           filters:
             brightness: 0.5
 
-  # 2) 团队简介区
-  - block: about
+  # 2) 团队简介区（原 about blox 改为 text blox）
+  - block: text
     content:
       title: "团队简介"
       text: |
@@ -95,4 +95,3 @@ sections:
         css_class: "bg-primary-700 text-white"
         css_style: ""
 ---
-
