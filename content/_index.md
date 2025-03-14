@@ -10,7 +10,7 @@ sections:
   # 1) 顶部 Hero 区
   - block: hero
     content:
-      title: "华北电力大学重力储能团队"
+      title: "华北电力大学重力储能团队2"
       text: "致力于推动重力储能技术在新能源电力系统中的深度应用，为绿色低碳转型贡献力量。"
       primary_action:
         text: "了解更多"

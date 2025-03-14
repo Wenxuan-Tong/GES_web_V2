@@ -33,14 +33,13 @@ header:
   navbar:
     enable: true
     blox: "navbar"
-    align: "center"
+    align: "right"
     fixed_to_top: true
     logo:
-      text: ""
-      # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      text: "GES@NCEPU"
+      filename: "NCEPU.svg"
     button:
-      enable: true
+      enable: false
       text: "Get Started"
       url: "https://hugoblox.com/templates/details/docs/"
     show_search: true
@@ -49,7 +48,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company. This work is licensed under {license}'
+    notice: '© {year} 华北电力大学重力储能团队. 保留所有权利.'
     license:
       enable: true
       allow_derivatives: false
@@ -64,7 +63,7 @@ locale:
 # Site features
 features:
   math:
-    enable: false
+    enable: true    # 启用数学公式支持
   privacy_pack:
     enable: false
   repository:
@@ -82,3 +81,9 @@ features:
       repo_id: ''
       category: ''
       category_id: ''
+
+params:
+  custom_css: ["assets/css/custom.css"]
+  custom_scss: ["scss/custom.scss"]  # 使用 SCSS 而不是 CSS
+  css:
+    - css/custom.css

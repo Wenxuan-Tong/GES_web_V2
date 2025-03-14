@@ -8,11 +8,6 @@ description: "华北电力大学重力储能团队致力于重力储能系统及
 draft: false
 ---
 
-# 华北电力大学重力储能团队  
-*Gravity Energy Storage of North China Electrical Power University*
-
-
-
 ## 团队简介  
 本团队隶属于“新能源电力系统国家重点实验室（华北电力大学）”(https://laps.ncepu.edu.cn/jgdw/sysjj/index.htm)，秉承“创新、严谨、务实”的科研精神，专注于重力储能系统及其应用研究。团队以追求前沿科技突破为使命，为大规模能量存储及高效利用提供坚实的技术支持。  
 
