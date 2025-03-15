@@ -1,7 +1,8 @@
 .navbar-brand img {
-  height: 200px !important;  /* 调整图片高度 */
+  height: 80px !important;  /* 调整图片高度 */
   width: auto !important;
   margin-right: 10px !important;
+  max-height: 80px !important;
 }
 
 /* 自定义导航栏 logo 样式 */
@@ -59,7 +60,12 @@ table {
 
 /* logo 文字大小调整 */
 .navbar-brand {
-  font-size: 1.8rem !important;  /* 调整 logo 文字的字体大小 */
+  font-size: 3rem !important;  /* 调整 logo 文字的字体大小 */
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 5px !important;    /* 减小顶部内边距 */
+  padding-bottom: 5px !important; /* 减小底部内边距 */
+  margin-top: -5px !important;    /* 向上移动整个logo */
 }
 
 /* 全局字体设置 */
@@ -70,6 +76,9 @@ body {
 /* 导航栏字体 */
 .navbar {
   font-family: "黑体", Arial, "Microsoft YaHei", sans-serif !important;
+  min-height: 60px !important;  /* 减小导航栏高度 */
+  padding-top: 0 !important;    /* 移除顶部内边距 */
+  padding-bottom: 0 !important; /* 移除底部内边距 */
 }
 
 /* 标题字体 */
@@ -101,4 +110,65 @@ div[class*="copyright-license-text"] {
 footer .fab,
 footer .fas {
   font-size: 1rem !important;
+}
+
+/* 调整页面容器宽度 */
+.container,
+.container-xl,
+.container-lg,
+#navbar-main .container,
+.page-wrapper .container,
+.docs-content .container,
+main .container,
+.article-container .container,
+.universal-wrapper .container {
+  max-width: 90vw !important;  /* 使用视窗宽度单位 */
+  width: 90vw !important;
+  margin-left: 5vw !important;
+  margin-right: 5vw !important;
+  padding: 0 !important;
+}
+
+/* 调整文章内容区域宽度 */
+.article-container {
+  max-width: 100% !important;  /* 使用容器的全部宽度 */
+  padding: 0 !important;
+}
+
+/* 强制内容区域使用全宽 */
+.article-style,
+.docs-article-container,
+.docs-content,
+.universal-wrapper,
+.article-container,
+main article {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 调整网格布局 */
+.col-12,
+.col-lg-8,
+.col-lg-9,
+.col-md-9 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+.row {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.col-12,
+.col-lg-8,
+.col-lg-9,
+.col-md-9,
+.col-md-8,
+div[class^="col-"] {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
 }

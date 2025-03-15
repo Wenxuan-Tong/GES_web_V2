@@ -7,6 +7,7 @@
 appearance:
   mode: light
   color: blue
+  width: wide
 
 # SEO
 marketing:
@@ -36,7 +37,7 @@ header:
     align: "right"
     fixed_to_top: true
     logo:
-      text: "GES@NCEPU"
+      text: ""
       filename: "NCEPU.svg"
     button:
       enable: false
@@ -83,7 +84,4 @@ features:
       category_id: ''
 
 params:
-  custom_css: ["assets/css/custom.css"]
-  custom_scss: ["scss/custom.scss"]  # 使用 SCSS 而不是 CSS
-  css:
-    - css/custom.css
+  custom_scss: ["scss/custom.scss"]
